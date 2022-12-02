@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>南阿蘇グルメ</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>    
+    <h1>南阿蘇グルメ</h1>
+        <h2>わいた温泉地獄蒸し</h2>    
+        <img src="images/Aso/Jigokumushi1.JPG" alt="地獄蒸し1" width=20%>
+        <img src="images/Aso/Jigokumushi2.JPG" alt="地獄蒸し2" width=20%>
+        <img src="images/Aso/Jigokumushi3.JPG" alt="地獄蒸し3" width=20%>
+            <h3>温泉の地熱を利用した地獄蒸し。<br>
+                温泉を利用すれば、無料で蒸し釜を利用することができます。<br>
+                食材は現地で購入も可能で、温泉に入っている間（30分ほど）で蒸しあがります。</h3>
+                <h4>住所〒869-2504<br>
+                    小国町西里2816（ゆけむり茶屋・わいた温泉組合）<br>
+                    TEL0967-46-5750（わいた温泉組合）
+
+
+        
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+</body>
+</html>
