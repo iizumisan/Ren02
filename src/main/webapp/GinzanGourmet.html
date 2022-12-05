@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>南阿蘇グルメ</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">そば処滝見亭</a>&emsp;
+    <a href="#hd2">クリエ</a>&emsp;
+    <a href="http://127.0.0.1:5500/EnjoyTravelling.html">ホームへ戻る<a/>
+</header>
+
+<body>
+    <h1>銀山温泉グルメ</h1>
+        <h2 id="hd1" >そば処滝見亭</h2>    
+        <img src="images/GinzanOnsen/Takimitei1.JPG" alt="滝見亭1" width=20%>
+        <img src="images/GinzanOnsen/Takimitei2.JPG" alt="滝見亭2" width=11.5%>
+        <img src="images/GinzanOnsen/Takimitei3.JPG" alt="滝見亭3" width=20%>
+            <h3>
+                尾花沢産の蕎麦粉を使い、挽きたて、打ちたて、茹でたてにこだわった蕎麦。<br>
+                蕎麦はモチモチとコシがあって、歯ごたえが強く、蕎麦の風味をしっかりと感じられる。<br>
+                つゆはほんのりと甘みがある鶏出汁。滝を眺めながら食事ができる。<br>
+            </h3>
+                <h4>住所〒999-4333<br> 
+                    山形県尾花沢市銀山新畑522<br>
+                    TEL0237-28-2164<br>
+                    <a href="https://www.takimikan.jp/meal/">詳細情報</a>
+                </h4>
+
+        <h2 id="hd2" >「酒茶房クリエ」の手づくりプリン、焼きココア</h2>    
+        <img src="images/GinzanOnsen/Kurie1.JPG" alt="クリエ1" width=22%>     
+        <img src="images/GinzanOnsen/Kurie2.JPG" alt="クリエ2" width=20%> 
+        <img src="images/GinzanOnsen/Kurie3.JPG" alt="クリエ3" width=20%> 
+            <h3>
+                大正浪漫な雰囲気たっぷりの店内。自家製焼きプリンは濃厚で苦みがあり、焼きマシュマロのココアは<br>
+                ラムが入った大人風味のものもある。<br>
+                大正情緒あふれる銀山温泉街を見ながらまったりできる。<br>
+                
+            </h3>
+                <h4>住所〒999-4333<br>                     
+                    山形県尾花沢市銀山新畑410<br>
+                        TEL0237-28-2038<br>
+                        <a href="https://clipyamagata.com/courrier">詳細情報</a><br><br><br><br><br><br><br><br>
+                </h4>
+    <a href="#">ページトップへ戻る<a/>
+
+ 
+
+</body>  
+</html>
