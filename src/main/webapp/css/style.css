@@ -10,20 +10,20 @@ header {
     font-size:1.5em;
     }
 
-  }
-
-ol{
-    font-size:2em;
-}
-
 h1{
     color:navy; font-weight:bold; font-size:5em;
 }
+
+ul{
+    color:blue; font-weight:bold; font-size:2.0em;
+}
+
+
 h2{
-    color:darksalmon; font-weight:bold; font-size:3em; 
+    color:darksalmon; font-weight:bold; font-size:4em; 
 }
 h3{
-    color:blueviolet; font-weight:bold; font-size:2em;
+    color:blueviolet; font-weight:bold; font-size:1.5em;
 }
 
 
