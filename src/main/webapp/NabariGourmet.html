@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>名張グルメ</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">見晴亭</a>&emsp;
+    <a href="#hd2">栄吉</a>&emsp;
+    <a href="http://127.0.0.1:5500/EnjoyTravelling.html">ホームへ戻る<a/>
+</header>
+
+<body>
+    <h1>名張グルメ</h1>
+        <h2 id="hd1" >見晴亭</h2>    
+        <img src="images/Nabari/Miharashitei1.JPG" alt="見晴亭1" width=20%>
+        <img src="images/Nabari/Miharashitei2.JPG" alt="見晴亭2" width=20%>
+        <img src="images/Nabari/Miharashitei3.JPG" alt="見晴亭3" width=20%>
+            <h3>
+                伊賀牛の入った名張市のB級グルメ牛汁を滝川の支流を眺めながら食すことができる。<br>
+                伊賀牛は、地元での消費が主であるが、融点が低く口の中で溶ける脂身。<br>
+                そして赤身の美味さは、有名ブランド牛にも劣らない物である。
+                
+            </h3>
+                <h4>住所〒5180469<br> 
+                三重県名張市赤目町長坂671-2<br>
+                    TEL0595-63-2989<br>
+                    <a href="https://retty.me/area/PRE24/ARE406/SUB40602/100000810631/">詳細情報</a>
+                </h4>
+
+        <h2 id="hd2" >栄吉</h2>    
+        <img src="images/Nabari/Eikichi1.JPG" alt="栄吉1" width=20%>     
+        <img src="images/Nabari/Eikichi2.JPG" alt="栄吉2" width=20%> 
+        <img src="images/Nabari/Eikichi3.JPG" alt="栄吉3" width=20%> 
+            <h3>
+                室生寺門前で50年前から回転焼きを作っているお店。よもぎ入り回転焼きは、よもぎを生地に練りこんで、<br>
+                たっぷりのあんこと共に今川焼風に焼いたもので、風味高く、上品な味がする。<br>
+                おそらくここでしか食べれなく、1個100円と安く、非常においしいので、おすすめ。<br>
+                因みに室生寺の駐車場は600円で、栄吉の駐車場は無料なので、室生寺参拝の際はここに駐車して<br>
+                浮いたお金でよもぎ入り回転焼きを買うのが賢い。
+            </h3>
+                <h4>住所〒633-0421 <br>                     
+                    奈良県宇陀市室生709-2<br>
+                        TEL0745-93-2024<br>
+                        <a href="https://nara.jr-central.co.jp/kankou/article/0207/">詳細情報</a><br>
+                </h4>
+    <a href="#">ページトップへ戻る<a/>
+
+ 
+
+</body>  
+</html>

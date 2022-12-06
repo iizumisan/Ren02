@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>京都グルメ</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">伊藤久右衛門 宇治本店 </a>&emsp;
+    <a href="#hd2">京のおばんざい処 六角や</a>&emsp;
+    <a href="http://127.0.0.1:5500/EnjoyTravelling.html">ホームへ戻る<a/>
+</header>
+
+<body>
+    <h1>京都グルメ</h1>
+        <h2 id="hd1" >伊藤久右衛門 宇治本店 </h2>    
+        <img src="images/Kyoto/Itokyuemon1.jpeg" alt="伊藤久右衛門1" width=18%>
+        <img src="images/Kyoto/Itokyuemon2.JPG" alt="伊藤久右衛門2" width=20%>
+        <img src="images/Kyoto/Itokyuemon3.JPG" alt="伊藤久右衛門3" width=20%>
+            <h3>
+                平等院鳳凰堂で有名な宇治の名門茶屋で、宇治茶で有名。<br>
+                抹茶を活かした食品の開発もされており、各種抹茶スイーツ、抹茶そば、抹茶カレーなどがある。<br>
+                人気の抹茶パフェはあんこに、渋皮栗、抹茶アイス、白玉なども入っていて、贅沢で食べ応えがある。
+            </h3>
+                <h4>住所〒611-0013<br> 
+                    京都府宇治市莵道荒槙19-3<br>
+                    TEL0774-23-3955<br>
+                    <a href="https://www.itohkyuemon.co.jp/corporate/shop/uji/sabo/">詳細情報</a>
+                </h4>
+
+        <h2 id="hd2" >京のおばんざい処 六角や</h2>    
+        <img src="images/Kyoto/Rokkakuya1.JPG" alt="六角屋1" width=21.5%>     
+        <img src="images/Kyoto/Rokkakuya2.JPG" alt="六角屋2" width=20%> 
+        <img src="images/Kyoto/Rokkakuya3.JPG" alt="六角屋3" width=13.5%> 
+            <h3>
+                こちらのお店のオススメは、お出汁にこだわったおばんざい。カツオやサバ節などからとった<br>
+                特製のダシをを使用したおばんざいが、季節がわりで常時7～8種類ほど用意されています。<br>
+                酒のつまみに最高です。
+            </h3>
+                <h4>住所〒600-8217 <br>                     
+                    京都府京都市下京区東境町172 ネオヒルズビル B1<br>
+                        TEL075-354-3789<br>
+                        <a href="https://rokkakuya-kyoto.safarigroup.info/">詳細情報</a><br><br><br><br><br><br><br><br>
+                </h4>
+    <a href="#">ページトップへ戻る<a/>
+
+ 
+
+</body>  
+</html>

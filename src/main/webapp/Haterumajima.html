@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>波照間島グルメ</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">居酒屋バンブー</a>&emsp;
+    <a href="#hd2">みんぴか</a>&emsp;
+    <a href="http://127.0.0.1:5500/EnjoyTravelling.html">ホームへ戻る<a/>
+</header>
+
+<body>
+    <h1>波照間島グルメ</h1>
+        <h2 id="hd1" >居酒屋バンブー</h2>    
+        <img src="images/Haterumajima/Bamboo1.JPG" alt="バンブー1" width=20%>
+        <img src="images/Haterumajima/Bamboo2.JPG" alt="バンブー2" width=20%>
+        <img src="images/Haterumajima/Bamboo3.JPG" alt="バンブー3" width=20%>
+            <h3>
+                おすすめはブーブー丼。波照間の黒糖と泡盛で味付けしてある。<br>
+                波照間島産の泡盛「泡波」をはじめ、数多の泡盛も楽しめる。<br>
+                月曜定休の店ばかりの波照間島で、唯一営業している貴重なお店。
+            </h3>
+                <h4>住所〒869-2504<br> 
+                熊本県阿蘇郡小国町西里岳の湯2816小国町西里2816（ゆけむり茶屋・わいた温泉組合）<br>
+                    TEL0967-46-5750（わいた温泉組合）<br>
+                    <a href="https://ogunitown.info/tourism/13/">詳細情報</a>
+                </h4>
+
+        <h2 id="hd2" >みんぴか</h2>    
+        <img src="images/Haterumajima/Minpika1.png" alt="みんぴか1" width=20%>     
+        <img src="images/Haterumajima/Minpika2.JPG" alt="みんぴか2" width=20%>
+        <img src="images/Haterumajima/Minpika3.JPG" alt="みんぴか3" width=24.5%>
+            <h3>
+                波照間島にあるかき氷の美味しいお店で、おすすめは、黒蜜スペシャルです！<br>
+                海を眺めながら、心地良い風を感じられるのも魅力で、波照間に来たらぜひ立ち寄りたいカフェ。<br>
+                オープンテラスの席で雨天休業なため注意
+            </h3>
+                <h4>住所〒907-1751<br>                     
+                    沖縄県八重山郡竹富町字波照間465<br>
+                        <br>
+                        <a href="https://recotripp.com/spot/69025">詳細情報</a><br><br><br><br><br><br>
+                </h4>
+    <a href="#">ページトップへ戻る<a/>
+
+ 
+
+</body>  
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>石垣島グルメ</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">居酒屋うるま</a>&emsp;
+    
+    <a href="http://127.0.0.1:5500/EnjoyTravelling.html">ホームへ戻る<a/>
+</header>
+
+<body>
+    <h1>石垣島グルメ</h1>
+        <h2 id="hd1" >居酒屋うるま</h2>    
+        <img src="images/Ishigakijima/Uruma1.JPG" alt="うるま1" width=22%>
+        <img src="images/Ishigakijima/Uruma2.JPG" alt="うるま2" width=20%>
+        <img src="images/Ishigakijima/Uruma3.JPG" alt="うるま3" width=20%>
+            <h3>
+                石垣離党ターミナル近辺の数ある店の中でも上品な店構え。<br>
+                新鮮でプリップリな食感の魚介類や島野菜、石垣島産の酒がリーズナブルな価格で楽しめる。<br>
+                入口がビルの2階で目立たない為、比較的すいている穴場。超おススメです。
+            </h3>
+                <h4>住所〒907-0012 <br> 
+                    沖縄県石垣市美崎町3−番地 東バスターミナルビル 2F<br>
+                    TEL0980-82-0864<br>
+                    <a href="https://www.izakaya-uruma.com/">詳細情報</a>
+                </h4>
+
+
+    <a href="#">ページトップへ戻る<a/>
+
+ 
+
+</body>  
+</html>
