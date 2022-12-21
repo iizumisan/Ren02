@@ -38,7 +38,7 @@ function check(){
 <p>コメント:<br>
 <textarea name="comment" rows="5" cols="40"></textarea>
 </p>
-<p><a href="http://localhost:8080/Ren02/EnjoyTravelling.html">ページトップへ戻る<a/></p>
+<p><a href="http://localhost:8080/Ren02/EnjoyTravelling.html">ホームへ戻る<a/></p>
 
 <p><input type="submit" value="送信"><input type="reset" value="リセット">
 </p>
