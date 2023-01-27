@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Furano Gourmet</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">Genghis Khan Hitsuji no Oka</a>&emsp;
+    <a href="#hd2">Farm Tomita</a>&emsp;
+    <a href="http://127.0.0.1:5500/src/main/webapp/EnjoyTravelling.html#">Home<a/>
+</header>
+
+<body>
+    <h1>Furano Gourmet</h1>
+        <h2 id="hd1" >Genghis Khan Hitsuji no Oka</h2>    
+        <img src="images/Furano/Jingisukan1.JPG" alt="ジンギスカン1" width=20%>
+        <img src="images/Furano/Jingisukan2.JPG" alt="ジンギスカン2" width=20%>
+        <img src="images/Furano/Jingisukan3.JPG" alt="ジンギスカン3" width=24%>
+            <h3>
+                Grilled mutton restaulant with a ranch.<br>
+                You can enjoy three types of lamb:<br> 
+                Suffolk, which is rare and has no odor.<br>
+                Milk lamb, which is soft and has little fat.<br>
+                White lamb, which has a little more fat and allows you to enjoy the original texture of Jingisukan.
+                
+            </h3>
+                <h4>Beberui Nakafurano-cho,Sorachi-gun, Hokkaido 071-0711 Japan<br>
+                    +81-167-44-3977｟May1～Sep30｠<br>
+                    +81-167-44-2952｟Oct1～Apr30｠<br>
+                    ​+81-90-9433-9906《Anual》<br>
+                    MAP CODE for Navifation: 349 169 820<br>
+                    <a href="https://www.hitsujinooka.com/">Information</a>
+                </h4>
+
+        <h2 id="hd2" >Farm Tomita Lavender Soft Cream & Melon</h2>    
+        <img src="images/Furano/Tomita1.JPG" alt="ファーム富田1" width=20%>     
+        <img src="images/Furano/Tomita2.JPG" alt="ファーム富田2" width=18%>
+        <img src="images/Furano/Tomita3.JPG" alt="ファーム富田3" width=20%>
+            <h3>
+                You can enjoy fragrant soft ice cream with lavender extract, which is only available at Farm Tomita,<br>
+                 and Furano melon with fine, juicy flesh while looking out at the lavender fields.
+                
+            </h3>
+                <h4>15 Kisenkita Nakafurano-cho, Sorachi-gun, Hokkaido 071-0704 Japan<br>
+                        +81-167-39-3939<br>
+                        <a href="https://www.farm-tomita.co.jp/">information</a><br><br><br><br><br><br>
+                </h4>
+    <a href="#">Top page<a/>
+
+ 
+
+</body>  
+</html>

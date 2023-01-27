@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Kyoto Gourmet</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">ItohKyuemon</a>&emsp;
+    <a href="#hd2">Rokkakuya</a>&emsp;
+    <a href="http://127.0.0.1:5500/src/main/webapp/EnjoyTravelling.html#">Home<a/>
+</header>
+
+<body>
+    <h1>Kyoto Gourmet</h1>
+        <h2 id="hd1" >ItohKyuemon</h2>    
+        <img src="images/Kyoto/Itokyuemon1.jpeg" alt="伊藤久右衛門1" width=18%>
+        <img src="images/Kyoto/Itokyuemon2.JPG" alt="伊藤久右衛門2" width=20%>
+        <img src="images/Kyoto/Itokyuemon3.JPG" alt="伊藤久右衛門3" width=20%>
+            <h3>
+                A prestigious teahouse in Uji, famous for the Phoenix Hall of Byodo-in Temple, and famous for its Uji tea. <br>
+                Foods that make use of matcha are also being developed, such as various matcha sweets, matcha soba, and matcha curry. <br>
+                The popular matcha parfait contains red bean paste, chestnuts, matcha ice cream, and shiratama (rice cake ball).
+                
+            </h3>
+                <h4>19-3 Todo, Uji-shi, Kyoto-fu 611-0013 Japan<br>
+                    81-774-23-3955<br>
+                    <a href="https://www.itohkyuemon.co.jp/corporate/shop/uji/sabo/">Information</a>
+                </h4>
+
+        <h2 id="hd2" >Rokkakuya</h2>    
+        <img src="images/Kyoto/Rokkakuya1.JPG" alt="六角屋1" width=21.5%>     
+        <img src="images/Kyoto/Rokkakuya2.JPG" alt="六角屋2" width=20%> 
+        <img src="images/Kyoto/Rokkakuya3.JPG" alt="六角屋3" width=13.5%> 
+            <h3>
+                The recommendation is the Obanzai that is particular about the soup stock. 
+                Depending on the season, there are always 7-8 types of obanzai made with <br>
+                a special broth made from bonito and mackerel flakes. <br>
+                Best as a snack with Sake.
+            </h3>
+                <h4>B1 Neohiruzubiru, 172 Higashisakaicho Shimogyo-ku, Kyoto-shi, Kyoto-fu 600-8217 Japan<br>
+                        81-75-354-3789<br>
+                        <a href="https://rokkakuya-kyoto.safarigroup.info/">Information</a><br><br><br><br><br><br><br><br>
+                </h4>
+    <a href="#">Top page<a/>
+
+ 
+
+</body>  
+</html>

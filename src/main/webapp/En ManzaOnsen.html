@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>ManzaOnsen Gourmet</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">Yokote Sancho Hutte</a>&emsp;
+    
+    <a href="http://127.0.0.1:5500/src/main/webapp/EnjoyTravelling.html#">Home<a/>
+</header>
+
+<body>
+    <h1>ManzaOnsen Gourmet</h1>
+        <h2 id="hd1" >Yokote Sancho Hutte</h2>    
+        <img src="images/ManzaOnsen/Yokote1.JPG" alt="横手山頂ヒュッテ1" width=20%>
+        <img src="images/ManzaOnsen/Yokote2.JPG" alt="横手山頂ヒュッテ2" width=20%>
+        <img src="images/ManzaOnsen/Yokote3.JPG" alt="横手山頂ヒュッテ3" width=20%>
+            <h3>
+                A bakery located in the highest place in Japan at an altitude of 2300m.<br> 
+                To get there, required to change lifts and climb some light mountain.<br>
+                Recommendation is bread with mushroom soup. You can enjoy hot soup with plenty of vegetables.<br>
+                Borscht is also popular because it is hot and delicious with plenty of vegetables.
+           
+            </h3>
+                <h4>住所〒381-0401 <br> 
+                    7149-17 Hirao Yamanochi-machi,Shimotakai-gun, Nagano-ken 381-0401 Japan<br>
+                    81-269-34-2430<br>
+                    <a href="https://gurutabi.gnavi.co.jp/a/a_1297/">Information</a>
+                </h4>
+
+
+    <a href="#">Top page<a/>
+
+ 
+
+</body>  
+</html>

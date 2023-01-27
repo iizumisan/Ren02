@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>MinamiAso Gourmet</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">WaitaOnsen Jikokumushi</a>&emsp;
+    <a href="#hd2">Akagyu no Yakata</a>&emsp;
+    <a href="http://127.0.0.1:5500/src/main/webapp/EnjoyTravelling.html">Home<a/>
+</header>
+
+<body>
+    <h1>MinamiAso Gourmet</h1>
+        <h2 id="hd1" >WaitaOnsen Jikokumushi</h2>    
+        <img src="images/Aso/Jigokumushi1.JPG" alt="地獄蒸し1" width=20%>
+        <img src="images/Aso/Jigokumushi2.JPG" alt="地獄蒸し2" width=20%>
+        <img src="images/Aso/Jigokumushi3.JPG" alt="地獄蒸し3" width=20%>
+            <h3>
+                Jigokumushi,which are steamed in a stone steamer which utilizes steam from a hot spring<br> 
+                You can steam the foods in stone steamer for free if you use the hot spring at site.<br>
+                You can also buy ingredients at site and it is steamed up for about 30 minutes while<br>
+                you are in the hot spring.<br>
+                Steamed dish with hot spring are delicious and healthy because the taste is condenced and<br>
+                excess oil is removed.
+
+            </h3>
+                <h4>2816 Nishizato Oguni-machi,Aso-gun, Kumamoto-ken 869-2504 Japan<br>
+                    +81-967-46-5750<br>
+                    <a href="https://ogunitown.info/tourism/13/">Information</a>
+                </h4>
+
+        <h2 id="hd2" >AkaUshi no Yakata</h2>    
+        <img src="images/Aso/Akaushi1.JPG" alt="赤牛1" width=18%>     
+        <img src="images/Aso/Akaushi2.JPG" alt="赤牛2" width=20%>
+        <img src="images/Aso/Akaushi3.JPG" alt="赤牛3" width=21%>
+            <h3>
+                Akaushi, a specialty of the Aso region, has a lot of lean meat and a moderate amount of fat,<br> 
+                and is both delicious, soft and healthy.<br>
+                "Akaushi no Yakata" is a yakiniku restaurant specializing in safe and secure "Akaushi beef"<br>
+                 raised in the rich grassland of MinamiAso.
+
+            </h3>
+                <h4>
+                    
+                    2815 Hisaishi Minamiaso-mura,Aso-gun, Kumamoto-ken 869-1412 Japan<br>
+                        +81-967-67-0848<br>
+                        <a href="https://aso-akaushi.stores.jp/">Information</a><br><br><br><br><br><br><br><br>
+                </h4>
+    <a href="#">Top page<a/>
+
+ 
+
+</body>  
+</html>

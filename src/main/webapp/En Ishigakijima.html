@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Ishigaki Island Gourmet</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">Izakaya Uruma</a>&emsp;
+    
+    <a href="http://127.0.0.1:5500/src/main/webapp/EnjoyTravelling.html#">Home<a/>
+</header>
+
+<body>
+    <h1>Ishigaki Island Gourmet</h1>
+        <h2 id="hd1" >Izakaya Uruma</h2>    
+        <img src="images/Ishigakijima/Uruma1.JPG" alt="うるま1" width=22%>
+        <img src="images/Ishigakijima/Uruma2.JPG" alt="うるま2" width=20%>
+        <img src="images/Ishigakijima/Uruma3.JPG" alt="うるま3" width=20%>
+            <h3>
+                This bar is elegant appearance among many restaulant near the Ishigaki terminal. <br>
+                You can enjoy fresh seafood, island vegetables, and sake from Ishigaki Island at reasonable prices.<br> 
+                Since the entrance is on the second floor of the building and is not conspicuous, <br>
+                it is a relatively undiscovered little-known spot. Highly recommended.
+                
+            </h3>
+                <h4>2F Higashi Busterminal bill, 3 Misakicho, Ishigaki-shi, Okinawa-ken 907-0012 Japan<br>
+                    81-980-82-0864<br>
+                    <a href="https://www.izakaya-uruma.com/">information</a>
+                </h4>
+
+
+    <a href="#">Top page<a/>
+
+ 
+
+</body>  
+</html>

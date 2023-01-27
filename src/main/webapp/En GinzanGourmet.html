@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>GinzanOnsen Gourmet</title>
+    <link rel="stylesheet" href="css/gourmet.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+   
+     $('#thumb img').click(function(){
+     console.log($(this).attr('alt'));
+     });
+     
+     const origin = $('#stage img').attr('src');
+     $('#thumb img').hover(function(){
+     const image = $(this).attr('src');
+     $('#stage img').attr('src', image);
+     }, function(){
+     $('#stage img').attr('src', origin);
+     });
+    });
+    </script>
+</head>
+
+<header>
+    <a href="#hd1">Takimitei</a>&emsp;
+    <a href="#hd2">Kurie</a>&emsp;
+    <a href="http://127.0.0.1:5500/src/main/webapp/EnjoyTravelling.html#">Home<a/>
+</header>
+
+<body>
+    <h1>GinzanOnsen Gourmet</h1>
+        <h2 id="hd1" >Takimitei</h2>    
+        <img src="images/GinzanOnsen/Takimitei1.JPG" alt="滝見亭1" width=20%>
+        <img src="images/GinzanOnsen/Takimitei2.JPG" alt="滝見亭2" width=11.5%>
+        <img src="images/GinzanOnsen/Takimitei3.JPG" alt="滝見亭3" width=20%>
+            <h3>
+                You can enjoy freshly boiled soba noodles which Using buckwheat flour from Obanazawa. <br>
+                The soba noodles are chewy, strong texture, and you can feel the flavor of the soba noodles.<br>
+                The soup is a slightly sweet chicken broth. You can enjoy your meal while looking at the waterfall. <br>
+            </h3>
+                <h4>522 Ginzanshinhata,Obanazawa-shi,Yamagata-ken 999-4333 Japan<br>
+                    81-237-28-2164<br>
+                    <a href="https://www.takimikan.jp/meal/">Information</a>
+                </h4>
+
+        <h2 id="hd2" >Cafe Kurie, Handmade pudding and baked cocoa </h2>    
+        <img src="images/GinzanOnsen/Kurie1.JPG" alt="クリエ1" width=22%>     
+        <img src="images/GinzanOnsen/Kurie2.JPG" alt="クリエ2" width=20%> 
+        <img src="images/GinzanOnsen/Kurie3.JPG" alt="クリエ3" width=20%> 
+            <h3>
+                The shop is full of Taisho era romance atmosphere. The homemade baked pudding is rich and bitter,<br>
+                 and the baked marshmallow cocoa has a mature flavor with rum. <br>
+                 You can relax while looking at the GinzanOnsen town full of Taisho era atmosphere
+                <br>
+                
+            </h3>
+                <h4>410 Ginzanshinhata, Obanazawa-shi, Yamagata-ken 999-4333 Japan<br>
+                        81-237-28-2038<br>
+                        <a href="https://clipyamagata.com/courrier">Information</a><br><br><br><br><br><br><br><br>
+                </h4>
+    <a href="#">Top page<a/>
+
+ 
+
+</body>  
+</html>
