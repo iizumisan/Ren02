@@ -29,16 +29,16 @@ function check(){
 }
 </script>
 
-<title>掲示板</title>
+<title>BBS</title>
 </head>
 <body>
 <form action="/Ren02/bbs" method="post" name="form1" onSubmit="return check()">
 
-<p>名前:<input type="text" name="name"></p>
-<p>コメント:<br>
+<p>Name:<input type="text" name="name"></p>
+<p>Comment:<br>
 <textarea name="comment" rows="5" cols="40"></textarea>
 </p>
-<p><a href="http://localhost:8080/Ren02/EnjoyTravelling.html">ホームへ戻る<a/></p>
+<p><a href="http://localhost:8080/Ren02/EnjoyTravelling.html">Home<a/></p>
 
 <p><input type="submit" value="送信"><input type="reset" value="リセット">
 </p>
