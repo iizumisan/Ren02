@@ -40,12 +40,12 @@ function check(){
 </p>
 <p><a href="http://localhost:8080/Ren02/EnjoyTravelling.html">Home<a/></p>
 
-<p><input type="submit" value="送信"><input type="reset" value="リセット">
+<p><input type="submit" value="Submit"><input type="reset" value="Reset">
 </p>
 </form>
 
 <c:forEach var="kakikomi" items="${kakikomiList}">
-<p>ID:<c:out value="${kakikomi.id}"/>　名前:<c:out value="${kakikomi.name}"/>　日付:<c:out value="${kakikomi.date}"/><br>
+<p>ID:<c:out value="${kakikomi.id}"/>　Name:<c:out value="${kakikomi.name}"/>　Date:<c:out value="${kakikomi.date}"/><br>
 <c:out value="${kakikomi.comment}"/></p>
 </c:forEach>
 
